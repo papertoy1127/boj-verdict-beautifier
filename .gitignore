@@ -1,0 +1,7 @@
+.vscode
+.idea
+*.drawio
+.DS_STORE
+.amo-upload-uuid
+./web-ext-artifacts/
+*.zip

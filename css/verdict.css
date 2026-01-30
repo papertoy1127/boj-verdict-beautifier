@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'LineSeed';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Th.woff2') format('woff2');
+    font-weight: 100;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'LineSeed';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'LineSeed';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-display: block;
+}
+
+
+.b-corner-squircle {
+    border-radius: 10px !important;
+    corner-shape: superellipse(2);
+}
+
+.b-corner-legacy {
+    border-radius: 5px !important;
+}
+
+.b-result {
+    display: inline-flex;
+    min-width: 36px; 
+    width: 36px;
+    overflow: hidden;
+    height: 20px;
+    color: #FFFFFF !important;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+
+    font-family: "LineSeed";
+    font-size: 14px;
+    font-weight: 700;
+    user-select: none;
+    
+    transition: all 0.1s ease-out;
+
+    background-color: #999999;
+}
+
+.b-result-ac { background: linear-gradient(130deg, #32CB3E, #06A062); width: auto; }
+.b-result-pac { background: linear-gradient(130deg, #F0CE00, #C0A500); width: auto; }
+.b-result-ce { background: linear-gradient(130deg, #8396AF, #2D3642); width: auto; }
+.b-result-rte { background: linear-gradient(130deg, #FFB767, #FF6666); width: auto; }
+.b-result-tle { background: linear-gradient(130deg, #FFB100, #FF0000); }
+.b-result-wa { background: linear-gradient(130deg, #FE0000, #C60000); }
+.b-result-mle { background: linear-gradient(130deg, #FE65CB, #D10B71); }
+.b-result-ole { background: linear-gradient(130deg, #6F2F9F, #0D2167); }
+.b-result-pe { background: linear-gradient(130deg, #A5A5A5, #725786); }
+.b-result-cmp { background: linear-gradient(130deg, #FEBF00, #BF9000); width: auto; font-weight: 400; }
+.b-result-wj { background: linear-gradient(130deg, #BEBEBE, #9B9B9B); width: auto; font-weight: 400; }
+.b-result-ijd { background: linear-gradient(130deg, #FEBF00, #D19D00); font-weight: 400; }
+
+a.b-result {
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+.b-result:hover {
+    min-width: 40px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: -2px;
+}
