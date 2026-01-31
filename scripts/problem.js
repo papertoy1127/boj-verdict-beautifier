@@ -17,8 +17,8 @@ const callback = (mutationsList, observer) => {
         let link = '';
         if (Element.prototype.isPrototypeOf(verdictElem.firstChild)) link = verdictElem.firstChild.getAttribute('href')
         
-        if (cls.contains('result-ac')) {
-            verdictElem.className = "b-result b-result-ac";            
+        if (cls.contains('result-ac') && !cls.contains('b-result-ac')) {
+            verdictElem.className = "result-ac b-result b-result-ac";            
             if (verdictElem.textContent == "맞았습니다!!") {
                 verdictElem.textContent = "AC";
             } else if (verdictElem.textContent.startsWith("맞았습니다!!")) {
@@ -35,8 +35,8 @@ const callback = (mutationsList, observer) => {
 
                 verdictElem.textContent = `${cor}`
             }
-        } else if (cls.contains('result-pac')) {
-            verdictElem.className = "b-result b-result-pac";
+        } else if (cls.contains('result-pac') && !cls.contains('b-result-pac')) {
+            verdictElem.className = "result-pac b-result b-result-pac";
             if (verdictElem.textContent == "맞았습니다!!") {
                 verdictElem.textContent = "PAC";
             } else if (verdictElem.textContent.startsWith("맞았습니다!!")) {
@@ -53,44 +53,44 @@ const callback = (mutationsList, observer) => {
 
                 verdictElem.textContent = `${cor}`
             }
-        } else if (cls.contains('result-rte')) {
-            verdictElem.className = "b-result b-result-rte";
+        } else if (cls.contains('result-rte') && !cls.contains('b-result-rte')) {
+            verdictElem.className = "result-rte b-result b-result-rte";
             if (verdictElem.textContent == "런타임 에러") {
                 verdictElem.textContent = "RTE";
             } else if (verdictElem.textContent.startsWith("런타임 에러")) {
                 let ctn = verdictElem.textContent;
                 verdictElem.textContent = ctn.substring(8, ctn.length-1);
             }
-        } else if (cls.contains('result-ce')) {
-            verdictElem.className = "b-result b-result-ce";
+        } else if (cls.contains('result-ce') && !cls.contains('b-result-ce')) {
+            verdictElem.className = "result-ce b-result b-result-ce";
             if (verdictElem.textContent == "컴파일 에러") {
                 verdictElem.textContent = "CE";
             } else if (verdictElem.textContent.startsWith("컴파일 에러")) {
                 let ctn = verdictElem.textContent;
                 verdictElem.textContent = ctn.substring(8, ctn.length-1);
             }
-        } else if (cls.contains('result-tle')) {
-            verdictElem.className = "b-result b-result-tle";
+        } else if (cls.contains('result-tle') && !cls.contains('b-result-tle')) {
+            verdictElem.className = "result-tle b-result b-result-tle";
             if (verdictElem.textContent == "시간 초과") {
                 verdictElem.textContent = "TLE";
             }
-        } else if (cls.contains('result-mle')) {
-            verdictElem.className = "b-result b-result-mle";
+        } else if (cls.contains('result-mle') && !cls.contains('b-result-mle')) {
+            verdictElem.className = "result-mle b-result b-result-mle";
             if (verdictElem.textContent == "메모리 초과") {
                 verdictElem.textContent = "MLE";
             }
-        } else if (cls.contains('result-ole')) {
-            verdictElem.className = "b-result b-result-ole";
+        } else if (cls.contains('result-ole') && !cls.contains('b-result-ole')) {
+            verdictElem.className = "result-ole b-result b-result-ole";
             if (verdictElem.textContent == "출력 초과") {
                 verdictElem.textContent = "OLE";
             }
-        } else if (cls.contains('result-pe')) {
-            verdictElem.className = "b-result b-result-pe";
+        } else if (cls.contains('result-pe') && !cls.contains('b-result-pe')) {
+            verdictElem.className = "result-pe b-result b-result-pe";
             if (verdictElem.textContent == "출력 형식이 잘못되었습니다") {
                 verdictElem.textContent = "PE";
             }
-        } else if (cls.contains('result-wa')) {
-            verdictElem.className = "b-result b-result-wa";
+        } else if (cls.contains('result-wa') && !cls.contains('b-result-wa')) {
+            verdictElem.className = "result-wa b-result b-result-wa";
             if (verdictElem.textContent == "틀렸습니다") {
                 verdictElem.textContent = "WA";
             }

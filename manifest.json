@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "BOJ Verdict Beautify",
   "description": "BOJ 채점 결과를 더 예쁘게 나타냅니다.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "cywohoy",
   "action": {
     "default_icon": "assets/logo-48.png"
