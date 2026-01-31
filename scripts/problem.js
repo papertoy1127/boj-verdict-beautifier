@@ -8,6 +8,11 @@ try {
 console.log("injected!");
 console.log(isFirefox)
 
+let squircle = !isFirefox;
+if (!isFirefox) {
+    const chromeVersion = parseInt(/Chrome\/([0-9.]+)/.exec(navigator.userAgent)[1].split('.')[0]);
+    if (chromeVersion < 139) squircle = false;
+}
 
 const callback = (mutationsList, observer) => {
     /** @type {Array<Element>} */
@@ -114,7 +119,7 @@ const callback = (mutationsList, observer) => {
         }
 
         
-        if (isFirefox) verdictElem.classList.add("b-corner-legacy");
+        if (!squircle) verdictElem.classList.add("b-corner-legacy");
         else verdictElem.classList.add("b-corner-squircle")
 
         if (link) {
